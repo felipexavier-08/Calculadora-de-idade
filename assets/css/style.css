@@ -1,0 +1,101 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+
+section{
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 128px;
+    justify-content: center;
+    background-image: url(../images/imagem-fundo.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .calculadora{
+
+      transition: transform 0.3s, box-shadow 0.3s;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        background-color: #4b5c49;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+        padding: 50px;
+        min-height: 400px;
+        min-width: 400px;
+        max-width: 600;
+
+        form{
+
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h4{
+                font-weight: 300;
+                text-align: center;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+
+            input{
+
+                min-width: 300px;
+                max-width:400px;
+                height: 23px;
+                margin-bottom: -10px;
+                border-radius: 2px;
+                border: 0px;
+                color: black;
+
+            }
+
+            button{
+
+                align-self: center;
+                margin-top: 0px;
+                min-width:300px;
+                max-width:400px;
+                height: 25px;
+                background-color: #f1c21a;
+                color: #4b5c49;
+                border: none;
+                border-radius: 2px;
+                font-weight: 900;
+                padding: 3px;
+
+            }
+
+        }
+
+        img{
+
+            margin-top: 25px;
+            width: 90%;
+
+        }
+
+    }
+
+    .calculadora:hover{
+
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px #4b8745;
+
+    }
+
+}
