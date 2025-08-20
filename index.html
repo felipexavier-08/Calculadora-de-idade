@@ -14,16 +14,16 @@
 
         <div class="calculadora">
 
-            <h2>Calculadora de idade</h2>
+            <h2 id = "titulo">Calculadora de idade</h2>
 
             <form class="form-calculadora" action="">
                 <h4>Informe seu ano de nascimento</h4>
 
-                <input type="number" placeholder="Ex: 1995">
+                <input id = "inputr" type="number" placeholder="Ex: 1995">
                 <br>
-                <button>calcular</button>
+                <button onclick=" idade()" type="button">calcular</button>
 
-                <h4>Por favor,insira um ano válido</h4>
+                <p id = "resultado"></p>
 
             </form>
 
@@ -35,6 +35,30 @@
     </section>
 
 
+    <script>
+    
+        const input = document.querySelector("#inputr")
+        const result =  document.getElementById("resultado")
+        let idade_resultado = 0
+        let anoatual = new Date().getFullYear()
+
+        function idade(){
+
+            if(input.value >1925 && input.value < anoatual && !isNaN(input.value)){
+
+                idade_resultado = anoatual-input.value
+                result.textContent = idade_resultado
+
+            }
+            else{
+
+                result.textContent = "Por favor insira um ano válido"
+
+            }
+
+        }
+        
+    </script>
     
 </body>
 </html>
