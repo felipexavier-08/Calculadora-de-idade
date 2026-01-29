@@ -1,104 +1,96 @@
-*{
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
-section{
-
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    padding: 128px;
-    justify-content: center;
-    background-image: url(../images/imagem-fundo.jpg);
-    background-position: center;
-    background-size: cover;
-
-    .calculadora{
-
-      transition: transform 0.3s, box-shadow 0.3s;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        background-color: #4b5c49;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-
-        padding: 50px;
-        min-height: 400px;
-        min-width: 400px;
-        max-width: 600;
-
-        p{
-            margin-top: 10px;
-            margin-bottom: 5px;
-        }
-
-        form{
-
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-
-            h4{
-                font-weight: 300;
-                text-align: center;
-                margin-bottom: 5px;
-                margin-top: 5px;
-            }
-
-            input{
-
-                min-width: 300px;
-                max-width:400px;
-                height: 23px;
-                margin-bottom: -10px;
-                border-radius: 2px;
-                border: 0px;
-                color: black;
-                margin-bottom: 5px;
-
-            }
-
-            button{
-
-                align-self: center;
-                margin-top: 5px;
-                min-width:300px;
-                max-width:400px;
-                height: 25px;
-                background-color: #f1c21a;
-                color: #4b5c49;
-                border: none;
-                border-radius: 2px;
-                font-weight: 900;
-                padding: 3px;
-
-            }
-
-        }
-
-        img{
-
-            margin-top: 25px;
-            width: 90%;
-
-        }
-
-    }
-
-
+body {
+  color: white;
 }
 
+/* SECTION */
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  background-image: url(../images/imagem-fundo.jpg);
+  background-position: center;
+  background-size: cover;
+}
 
+/* CALCULADORA */
+.calculadora {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #4b5c49;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  min-height: 400px;
+  min-width: 400px;
+  max-width: 600px;
+}
+
+/* TEXTOS */
+.calculadora p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* FORM */
+.calculadora form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.calculadora form h4 {
+  font-weight: 300;
+  text-align: center;
+  margin: 5px 0;
+}
+
+/* INPUT */
+.calculadora form input {
+  min-width: 300px;
+  max-width: 400px;
+  height: 23px;
+  border-radius: 2px;
+  border: none;
+  color: black;
+  padding: 3px;
+}
+
+/* BUTTON */
+.calculadora form button {
+  align-self: center;
+  margin-top: 5px;
+  min-width: 300px;
+  max-width: 400px;
+  height: 25px;
+  background-color: #f1c21a;
+  color: #4b5c49;
+  border: none;
+  border-radius: 2px;
+  font-weight: 900;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.calculadora form button:hover {
+  opacity: 0.9;
+}
+
+/* IMAGEM */
+.calculadora img {
+  margin-top: 25px;
+  width: 90%;
+}
