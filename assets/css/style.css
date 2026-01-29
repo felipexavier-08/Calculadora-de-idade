@@ -66,13 +66,14 @@ section{
                 border-radius: 2px;
                 border: 0px;
                 color: black;
+                margin-bottom: 5px;
 
             }
 
             button{
 
                 align-self: center;
-                margin-top: 0px;
+                margin-top: 5px;
                 min-width:300px;
                 max-width:400px;
                 height: 25px;
@@ -95,5 +96,6 @@ section{
         }
 
     }
+
 
 }
